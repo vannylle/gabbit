@@ -1,0 +1,196 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+  background: #444;
+}
+
+/* NAV-BAR */
+/* MENU */
+nav.flex-container {
+  background: #222;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  font-size: 90%;
+}
+
+nav.flex-container a.menu {
+  padding: 1rem 1.5rem; 
+  height: 3rem;
+  color: #ddd;
+  text-decoration: none;
+}
+
+nav.flex-container a.menu:hover {
+  border-bottom: coral 0.3rem solid;
+  transition: 0.2s;
+  color: #fff;
+}
+
+nav.flex-container a.menu:first-child {
+  margin-left: 5rem;
+  margin-right: 4rem;
+}
+
+/* SOCIAL MEDIA */
+nav.flex-container section.flex-container {
+  display: flex;
+  align-items: center;
+  margin-left: 8rem;
+  justify-content: space-around;
+  width: 9rem;
+}
+
+nav.flex-container section.flex-container a {
+  background: #222;
+  height: 3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem; 
+}
+nav.flex-container section.flex-container a:hover {
+  border-bottom: 0.2rem solid coral;
+}
+
+nav.flex-container section.flex-container a img {
+  filter: grayscale(0%);  
+  height: 1.3rem;
+  margin-top: 0.8rem;
+}
+nav.flex-container section.flex-container a:hover img{
+  filter: grayscale(100%);  
+  transition: 0.5s;
+}
+/* END NAV-BAR */
+
+/* MAIN */
+/* WELCOME */
+main {
+  /*height: 100vh; */
+  background-color: #333;
+  /* margin: 0 0 0 6rem; */
+}
+main section.welcome {
+  display: flex;
+  width: 98vw;
+  background: url(img1.png) no-repeat;
+  background-position: -270% 35%;
+}
+main section.welcome article {
+  margin-left: 5rem;
+}
+main section.welcome aside {
+  background: #444;
+  width: 8rem;
+  height: 92vh;
+}
+main section.welcome h1 {
+  margin: 10rem 0 0 0rem;
+  width: fit-content;
+  padding: 0 1rem;
+  font-size: 250%;
+  color: white;
+  text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;
+}
+main section.welcome p { 
+  margin: 1rem 0 0 0rem;  
+  width: fit-content;
+  padding: 0 1rem;
+  font-size: 120%;
+  text-align: justify;
+  color: white;
+  /*text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;*/
+  font-weight: bold;
+}
+
+main .welcome a{
+  margin: 2rem 0 0 1rem;
+  background: #222;
+  display: block;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+}
+main .welcome a:hover {
+  background: #111;
+  transition: 0.1s;
+}
+
+/* HORIZONTAL */
+main div {
+  background: #444;
+  height: 0.3rem;
+}
+
+/* ABOUT ME */
+main section.aboutme {
+  margin-top: 0rem;
+  display: flex;
+  justify-content: flex-end;
+  background: url('fox\ winter.png') no-repeat;
+  background-size: 500px;
+  height: 30rem;
+  background-position: 25%;
+}
+main section.aboutme aside {
+  background: #444;
+  width: 8rem;
+  height: 76.8vh;
+}
+main section.aboutme article{
+  margin: 0 5rem 0 0;
+  text-align: right;
+}
+main section.aboutme h1 {
+  color: white;
+  margin: 10rem 0 1.5rem 0;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;
+}
+main section.aboutme p {
+  color: white;
+  margin: 1rem 0;
+  font-size: 120%;
+  font-weight: bold;
+}
+/* END MAIN*/
+
+/* FOOTER */
+footer.flex-container {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background: #222;
+  color: white;
+}
+
+footer.flex-container section {
+  padding: 2rem;
+  text-align: center;
+}
+footer.flex-container section a {
+  text-decoration: none;
+}
+footer.flex-container section h1 {
+  margin-bottom: 1rem;
+}
+footer.flex-container section p {
+  margin-bottom: 0.5rem;
+  color: #bbb;
+}
+footer.flex-container section.courses {
+  margin-left: 4rem;
+}
+/* END FOOTER */
+section.copyright {
+  background: #222;
+  padding: 1rem 15rem;
+  color: #bbb;
+}
