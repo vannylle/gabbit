@@ -69,28 +69,25 @@ nav.flex-container section.flex-container a:hover img{
 /* END NAV-BAR */
 
 /* MAIN */
-/* WELCOME */
+
+/* 1- WELCOME */
+/*
 main {
-  /*height: 100vh; */
-  background-color: #333;
-  /* margin: 0 0 0 6rem; */
-}
+  height: 100vh; 
+  background-color: #333; 
+  margin: 0 0 0 6rem; 
+}*/
 main section.welcome {
+  margin: 0.4rem 0 0.4rem 8rem;
   display: flex;
-  width: 98vw;
-  background: url(img1.png) no-repeat;
-  background-position: -270% 35%;
+  background: #333 url(images/img1.png) no-repeat;
+  background-position: -75% 40%;
 }
 main section.welcome article {
-  margin-left: 5rem;
+  margin: 10rem 0 0 5rem;
 }
-main section.welcome aside {
-  background: #444;
-  width: 8rem;
-  height: 92vh;
-}
+
 main section.welcome h1 {
-  margin: 10rem 0 0 0rem;
   width: fit-content;
   padding: 0 1rem;
   font-size: 250%;
@@ -107,9 +104,8 @@ main section.welcome p {
   /*text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;*/
   font-weight: bold;
 }
-
 main .welcome a{
-  margin: 2rem 0 0 1rem;
+  margin: 2rem 0 7rem 1rem;
   background: #222;
   display: block;
   width: 10rem;
@@ -129,12 +125,12 @@ main div {
   height: 0.3rem;
 }
 
-/* ABOUT ME */
+/* 2- ABOUT ME */
 main section.aboutme {
-  margin-top: 0rem;
+  margin: 0.4rem 8rem 0.4rem 0;
   display: flex;
   justify-content: flex-end;
-  background: url('fox\ winter.png') no-repeat;
+  background: #333 url('images/fox winter.png') no-repeat;
   background-size: 500px;
   height: 30rem;
   background-position: 25%;
@@ -142,7 +138,7 @@ main section.aboutme {
 main section.aboutme aside {
   background: #444;
   width: 8rem;
-  height: 76.8vh;
+  height: 76.8vh; 
 }
 main section.aboutme article{
   margin: 0 5rem 0 0;
@@ -160,6 +156,58 @@ main section.aboutme p {
   font-size: 120%;
   font-weight: bold;
 }
+/*  3- COMPETITIONS */
+main section.competitions aside {
+  background: #444;
+  width: 8rem;
+  height: 60.8vh;
+  float: left;
+}
+main section.competitions {
+  height: 28rem;
+  /* background: darkcyan; */
+  /* float: left; */
+  margin: 0.4rem 0 0.4rem 8rem;
+  background: #333;
+}
+main section.competitions h1 {
+  /* background: crimson; */
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;
+  text-align: center;
+  padding: 3rem 2rem 2rem 2rem;
+  /* width: 76.5rem; */
+}
+main section.competitions article.flex-container article img {
+  box-shadow: 0px 0px 8px 4px #171717;
+  padding: 2px;
+}
+main section.competitions article.flex-container article p {
+  /* background: magenta; */
+  color: white;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+  
+main section.competitions  article.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  /* background: gold; */
+  text-align: center;
+  /* height: 10rem; */
+}
+main section.competitions  article.flex-container article {
+  /* background: darkgreen; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
 /* END MAIN*/
 
 /* FOOTER */
@@ -169,6 +217,7 @@ footer.flex-container {
   align-items: flex-start;
   background: #222;
   color: white;
+  clear: both;
 }
 
 footer.flex-container section {
@@ -184,6 +233,9 @@ footer.flex-container section h1 {
 footer.flex-container section p {
   margin-bottom: 0.5rem;
   color: #bbb;
+}
+footer.flex-container section p:hover {
+  color: white;
 }
 footer.flex-container section.courses {
   margin-left: 4rem;
