@@ -236,7 +236,7 @@ footer.flex-container section.courses {
 /* END FOOTER */
 section.copyright {
   background: #222;
-  padding: 1rem 13rem;
+  padding: 1rem 0;
   color: #bbb;
   text-align: center;
 }
@@ -249,6 +249,9 @@ section.copyright {
   nav.flex-container section.flex-container {
     display: none;
   }
+  nav.flex-container a.menu:first-child {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 62rem) {
   nav.flex-container a.menu.opt {
@@ -257,5 +260,8 @@ section.copyright {
   }
   nav.flex-container a.menu.dropdown {
     display: block;
+  }
+  footer.flex-container section.courses {
+    margin-left: 0;
   }
 }
