@@ -20,6 +20,10 @@ nav.flex-container {
   font-size: 90%;
 }
 
+nav.flex-container a.menu.dropdown {
+  display: none;
+}
+
 nav.flex-container a.menu {
   padding: 1rem 1.5rem; 
   height: 3rem;
@@ -59,8 +63,8 @@ nav.flex-container section.flex-container a:hover {
 
 nav.flex-container section.flex-container a img {
   filter: grayscale(0%);  
-  height: 1.3rem;
-  margin-top: 0.8rem;
+  height: 1.2rem;
+  margin-top: 0.9rem;
 }
 nav.flex-container section.flex-container a:hover img{
   filter: grayscale(100%);  
@@ -69,29 +73,26 @@ nav.flex-container section.flex-container a:hover img{
 /* END NAV-BAR */
 
 /* MAIN */
-/* WELCOME */
+
+/* 1- WELCOME */
+/*
 main {
-  /*height: 100vh; */
-  background-color: #333;
-  /* margin: 0 0 0 6rem; */
-}
+  height: 100vh; 
+  background-color: #333; 
+  margin: 0 0 0 6rem; 
+}*/
 main section.welcome {
+  margin: 0.4rem 0 0.4rem 8rem;
   display: flex;
-  width: 98vw;
-  background: url(img1.png) no-repeat;
-  background-position: -270% 35%;
+  background: #333 url(images/img1.png) no-repeat;
+  background-position: -75% 40%;
 }
 main section.welcome article {
-  margin-left: 5rem;
+  margin: 10rem 0 0 5rem;
 }
-main section.welcome aside {
-  background: #444;
-  width: 8rem;
-  height: 92vh;
-}
+
 main section.welcome h1 {
-  margin: 10rem 0 0 0rem;
-  width: fit-content;
+  /*width: fit-content;*/
   padding: 0 1rem;
   font-size: 250%;
   color: white;
@@ -99,17 +100,16 @@ main section.welcome h1 {
 }
 main section.welcome p { 
   margin: 1rem 0 0 0rem;  
-  width: fit-content;
+  /*width: fit-content;*/
   padding: 0 1rem;
   font-size: 120%;
   text-align: justify;
   color: white;
-  /*text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;*/
+  text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;
   font-weight: bold;
 }
-
 main .welcome a{
-  margin: 2rem 0 0 1rem;
+  margin: 2rem 0 7rem 1rem;
   background: #222;
   display: block;
   width: 10rem;
@@ -123,27 +123,18 @@ main .welcome a:hover {
   transition: 0.1s;
 }
 
-/* HORIZONTAL */
-main div {
-  background: #444;
-  height: 0.3rem;
-}
-
-/* ABOUT ME */
+/* 2- ABOUT ME */
 main section.aboutme {
-  margin-top: 0rem;
+  margin: 0.4rem 8rem 0.4rem 0;
   display: flex;
   justify-content: flex-end;
-  background: url('fox\ winter.png') no-repeat;
+  background: #333 url('images/fox winter.png') no-repeat;
   background-size: 500px;
   height: 30rem;
   background-position: 25%;
+  text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;
 }
-main section.aboutme aside {
-  background: #444;
-  width: 8rem;
-  height: 76.8vh;
-}
+
 main section.aboutme article{
   margin: 0 5rem 0 0;
   text-align: right;
@@ -160,6 +151,47 @@ main section.aboutme p {
   font-size: 120%;
   font-weight: bold;
 }
+/*  3- COMPETITIONS */
+main section.competitions {
+  height: 28rem;
+  /* background: darkcyan; */
+  margin: 0.4rem 0 0.4rem 8rem;
+  background: #333;
+}
+main section.competitions h1 {
+  /* background: crimson; */
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px  black, -1px 1px  black, 1px -1px  black, -1px -1px  black;
+  text-align: center;
+  padding: 3rem 6rem 2rem 2rem;
+}
+main section.competitions  article.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0 4rem 0 0;
+}
+main section.competitions  article.flex-container article {
+  /* background: darkgreen; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+main section.competitions article.flex-container article img {
+  box-shadow: 0px 0px 8px 4px #171717;
+  padding: 2px;
+}
+main section.competitions article.flex-container article p {
+  /* background: magenta; */
+  color: white;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
 /* END MAIN*/
 
 /* FOOTER */
@@ -169,6 +201,7 @@ footer.flex-container {
   align-items: flex-start;
   background: #222;
   color: white;
+  clear: both;
 }
 
 footer.flex-container section {
@@ -185,12 +218,122 @@ footer.flex-container section p {
   margin-bottom: 0.5rem;
   color: #bbb;
 }
+footer.flex-container section p:hover {
+  color: white;
+}
 footer.flex-container section.courses {
   margin-left: 4rem;
 }
 /* END FOOTER */
 section.copyright {
   background: #222;
-  padding: 1rem 13rem;
+  padding: 1rem 0;
   color: #bbb;
+  text-align: center;
+}
+
+/* MediaQuery */
+@media screen and (max-width: 72rem) {
+  /* nav bar */
+  nav.flex-container{
+    /* background: green; */
+    padding-right: 2rem;
+  }
+  nav.flex-container section.flex-container {
+    display: none;
+  }
+  nav.flex-container a.menu:first-child {
+    margin-left: 0;
+  }
+
+}
+@media screen and (max-width: 68rem) {
+  /* nav bar */
+  nav.flex-container{
+    padding-right: 0;
+  }
+  nav.flex-container a.menu.opt {
+    background: red;
+    display: none;
+  }
+  nav.flex-container a.menu:first-child {
+    margin-right: 0;
+  }
+  nav.flex-container a.menu.dropdown {
+    display: block;
+  }
+  /* main */
+  /* welcome */
+  main section.welcome {
+    margin: 0.4rem;
+    background-position: top center ;
+    background-size: 700px;
+  }
+  main section.welcome article {
+    margin: 0rem auto 1rem;
+  }
+  main section.welcome article h1 {
+    padding-top: 20rem;
+  }
+  
+  main section.welcome article p, main section.welcome article h1 {
+    text-align: center;
+  }
+  main .welcome a {
+    margin: 1.5rem auto ;
+  }
+  /* about me */
+  main div{
+    height: 3rem;
+    margin: 0 0.4rem ;
+    background: #333;
+  }
+  main section.aboutme {
+    margin: 0 0.4rem 0.4rem;
+    background-position:  center top;
+    text-align: center;
+    height: auto;
+  }
+  main section.aboutme article {
+    text-align: center;
+    margin: 1rem auto;
+  }
+  
+  main section.aboutme article p,  main section.aboutme article h1 {
+    text-align: center;
+  }
+  main section.aboutme article h1 {
+    margin: 23rem auto 0rem;
+  }
+
+  /* competition*/
+  main section.competitions {
+    height: auto;
+    margin: 0.4rem;
+  }
+  main section.competitions h1 {
+    padding: 2rem 0;
+    margin: auto;
+  }
+  main section.competitions article.flex-container {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  main section.competitions article.flex-container article {
+    padding: 0;
+    margin: auto;
+  }
+  main section.competitions article.flex-container article img {
+    width: 50%;
+    margin: auto;
+  }
+  main section.competitions article.flex-container article p {
+    margin: 0.5rem 0 3rem;
+  }
+  /* footer */
+  footer.flex-container section.courses {
+    margin-left: 0;
+  }
+
 }
