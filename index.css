@@ -19,7 +19,7 @@ nav.flex-container {
   height: 3rem;
   font-size: 90%;
 }
-nav.flex-container a.menu.dropdown { /* menu button for low width*/
+nav.flex-container div.dropdown.first { /* menu button for low width*/
   display: none;
 }
 
