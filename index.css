@@ -19,19 +19,41 @@ nav.flex-container {
   height: 3rem;
   font-size: 90%;
 }
-
-nav.flex-container a.menu.dropdown {
+nav.flex-container a.menu.dropdown { /* menu button for low width*/
   display: none;
 }
 
-nav.flex-container a.menu {
+nav.flex-container div.dropdown div.dropdowncontent {
+  display: none;
+}
+nav.flex-container a.menu, nav.flex-container div.dropdown a.first {
   padding: 1rem 1.5rem; 
   height: 3rem;
   color: #ddd;
   text-decoration: none;
+  display: inline-block;/**/
 }
-
-nav.flex-container a.menu:hover {
+nav.flex-container div.dropdown:hover div.dropdowncontent {
+  position: absolute;
+  top: 3rem;
+  display: block;
+  color: white;
+  text-align: center;
+}
+nav.flex-container div.dropdown:hover div.dropdowncontent a {
+  display: block;
+  background-color: #222;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  color: #ddd;
+  text-decoration: none;
+}
+nav.flex-container div.dropdown:hover div.dropdowncontent a:hover {
+  transition: 0.2s;
+  background-color: indigo;
+  color: white;
+}
+nav.flex-container a.menu:hover, nav.flex-container div.dropdown:hover a.first {
   border-bottom: coral 0.3rem solid;
   transition: 0.2s;
   color: #fff;
@@ -239,7 +261,7 @@ section.copyright {
     /* background: green; */
     padding-right: 2rem;
   }
-  nav.flex-container section.flex-container {
+  nav.flex-container section.flex-container.social {
     display: none;
   }
   nav.flex-container a.menu:first-child {
@@ -252,14 +274,21 @@ section.copyright {
   nav.flex-container{
     padding-right: 0;
   }
-  nav.flex-container a.menu.opt {
-    background: red;
+  nav.flex-container a.menu.opt, nav.flex-container div.dropdown {
     display: none;
+  }
+  nav.flex-container div.dropdown.first {
+    display: block;
+    position: relative;
+  }
+  nav.flex-container div.dropdown.first div.dropdowncontent {
+
+    right: 0rem;
   }
   nav.flex-container a.menu:first-child {
     margin-right: 0;
   }
-  nav.flex-container a.menu.dropdown {
+  nav.flex-container div.dropdown.first a.first {
     display: block;
   }
   /* main */
