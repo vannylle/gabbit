@@ -364,5 +364,8 @@ section.copyright {
   footer.flex-container section.courses {
     margin-left: 0;
   }
-
+  footer.flex-container section {
+    padding-left: 0.2rem;
+    padding-right: 0;
+  }
 }
