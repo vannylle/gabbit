@@ -366,6 +366,9 @@ section.copyright {
     margin-left: 0;
   }
   footer.flex-container section {
-    padding-left: 2rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+  footer.flex-container section.contact-me {
+    margin-right: 2rem;
   }
 }
